@@ -1,0 +1,223 @@
+/*
+Theme Name: The Office Supply Outlet Block Theme
+*/
+
+/* patterns/heading-slider.php */
+.carousel-control-next,
+.carousel-control-prev {
+    width: 4%;
+}
+
+
+/* parts/header.html */
+
+@media only screen and (min-width: 850px) {
+    nav.wp-block-navigation.is-layout-flex ul li {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    nav.wp-block-navigation.is-layout-flex ul li a {
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 539px) {
+    nav.wp-block-navigation.is-layout-flex {
+        line-height: 70px;
+    }
+}
+
+.sticky-nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 10;
+}
+
+nav.wp-block-navigation.is-layout-flex {
+    height: 70px;
+    margin-right: 25px;
+}
+
+div.is-menu-open li a {
+    line-height: 40px;
+    height: 40px;
+}
+
+div.is-menu-open li div.wp-block-site-logo {
+    height: 70px;
+}
+
+div.wp-block-site-logo img {
+    max-height: 70px;
+    width: auto;
+}
+
+div.is-menu-open li.has-child a[href*="Company"] {
+    display: none;
+}
+
+a[href*="Company"].wp-block-navigation-item__content  {
+    pointer-events: none;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__submenu-container {
+    padding-top: 0;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .has-child .wp-block-navigation__submenu-container {
+    padding-right: 0;
+}
+
+
+/* templates/archive-product.html */
+
+.product-grid-container {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17px !important;
+}
+
+.product-grid-container .wp-block-group.is-layout-constrained {
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+}
+
+a.button.wp-element-button.product_type_simple.add_to_cart_button.ajax_add_to_cart:hover {
+    color: #fff;
+
+}
+
+    /* Button hover effect adapted from: https: //codepen.io/giana/pen/xdXpJB */
+
+a.button.wp-element-button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
+    box-shadow: inset 0 0 0 4px #32373c;
+    transition: color 0.25s 0.0833333333s;
+    position: relative;
+}
+
+a.button.wp-element-button.product_type_simple.add_to_cart_button.ajax_add_to_cart::before,
+a.button.wp-element-button.product_type_simple.add_to_cart_button.ajax_add_to_cart::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+}
+
+a.button.wp-element-button.product_type_simple.add_to_cart_button.ajax_add_to_cart::before {
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+}
+
+a.button.wp-element-button.product_type_simple.add_to_cart_button.ajax_add_to_cart::after {
+    border-top-width: 4px;
+    border-right-width: 4px;
+}
+
+a.button.wp-element-button.product_type_simple.add_to_cart_button.ajax_add_to_cart:hover {
+    color: #fff;
+    background-color: #440a0a;
+}
+
+a.button.wp-element-button.product_type_simple.add_to_cart_button.ajax_add_to_cart:hover::before,
+a.button.wp-element-button.product_type_simple.add_to_cart_button.ajax_add_to_cart:hover::after {
+    border-color: #8c1e1e;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+}
+
+a.button.wp-element-button.product_type_simple.add_to_cart_button.ajax_add_to_cart:hover::before {
+    transition-delay: 0s, 0s, 0.25s;
+}
+
+a.button.wp-element-button.product_type_simple.add_to_cart_button.ajax_add_to_cart:hover::after {
+    transition-delay: 0s, 0.25s, 0s;
+}
+
+/* templates/single-product.html */
+
+.single-product-grid-container {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17px !important;
+}
+
+.single-product-grid-container .wp-block-group.is-layout-constrained {
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+}
+
+    /* Button hover effect adapted from: https: //codepen.io/giana/pen/xdXpJB */
+
+button.single_add_to_cart_button.button.alt.wp-element-button {
+    box-shadow: inset 0 0 0 4px #32373c;
+    transition: color 0.25s 0.0833333333s;
+    position: relative;
+}
+
+button.single_add_to_cart_button.button.alt.wp-element-button::before,
+button.single_add_to_cart_button.button.alt.wp-element-button::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+}
+
+button.single_add_to_cart_button.button.alt.wp-element-button::before {
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+}
+
+button.single_add_to_cart_button.button.alt.wp-element-button::after {
+    border-top-width: 4px;
+    border-right-width: 4px;
+}
+
+button.single_add_to_cart_button.button.alt.wp-element-button:hover {
+    color: #fff;
+    background-color: #440a0a;
+}
+
+button.single_add_to_cart_button.button.alt.wp-element-button:hover::before,
+button.single_add_to_cart_button.button.alt.wp-element-button:hover::after {
+    border-color: #8c1e1e;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+}
+
+button.single_add_to_cart_button.button.alt.wp-element-button:hover::before {
+    transition-delay: 0s, 0s, 0.25s;
+}
+
+button.single_add_to_cart_button.button.alt.wp-element-button:hover::after {
+    transition-delay: 0s, 0.25s, 0s;
+}
+
+.woocommerce .quantity .qty {
+    width: 6em;
+}
