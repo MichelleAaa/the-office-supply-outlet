@@ -221,3 +221,89 @@ button.single_add_to_cart_button.button.alt.wp-element-button:hover::after {
 .woocommerce .quantity .qty {
     width: 6em;
 }
+
+/* templates/page-contact-us.html */
+
+
+/* patterns/contact-us-icons.php */
+
+.contact-us-icons-block .wp-block-group.has-background.is-layout-constrained {
+    height: 223px !important;
+}
+
+.contact-icons-outer-wrapper {
+    max-width: 90vw !important;
+}
+
+.wp-container-36 {
+    justify-content: center;
+    align-items: center !important;
+}
+
+.contact-icons-outer-wrapper .wp-block-group.has-background.is-layout-constrained:hover {
+    background-color: rgb(251, 251, 251) !important;
+}
+
+/* blocks/contactusform.php */
+
+
+@media only screen and (min-width: 703px) {
+    .contact-input-container-left {
+        padding-right: 2px;
+    }
+    .contact-input-container-right {
+        padding-left: 2px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .contact-us-form-wrapper {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .contact-us-form-wrapper {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .contact-us-form-wrapper {
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+}
+
+.contact-us-form-wrapper button:hover {
+    background-color: rgb(126, 26, 26) !important;
+}
+
+/* index.html */
+
+.index-query-loop-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .index-query-loop-container .wp-block-query.is-layout-flow {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .index-query-loop-container .wp-block-query.is-layout-flow {
+        width: 80%;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .index-query-loop-container .wp-block-query.is-layout-flow {
+        width: 70%;
+    }
+}
