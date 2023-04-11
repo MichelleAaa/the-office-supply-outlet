@@ -2,14 +2,71 @@
 Theme Name: The Office Supply Outlet Block Theme
 */
 
+:root {
+    --main-bk-color: white;
+    --dark-red: #8c1e1e;
+    --bright-red: rgb(204, 2, 2);
+    --dark-gray: #343031;
+    --font-poppins: "Poppins", sans-serif;
+    --font-segoe: "Segoe Ui Bold", sans-serif;
+}
+
+
+@font-face {
+    font-family: 'Segoe UI Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Regular'), url('assets/fonts/Segoe-UI.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Segoe UI Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold'), url('Segoe-UI-Bold.woff') format('woff');
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2 {
+    font-family: "segoe Ui Bold", sans-serif;
+}
+
+body {
+    background-color: var(--main-bk-color);
+}
+
 /* patterns/heading-slider.php */
 .carousel-control-next,
 .carousel-control-prev {
     width: 4%;
 }
 
+.carousel-inner h2.wp-block-heading {
+    font-family: "Poppins", sans-serif !important;
+    font-family: "Segoe Ui Bold", sans-serif !important;
+    padding-bottom: 8px;
+}
+
+.carousel-inner h2.wp-block-heading+p {
+    padding-bottom: 10px;
+}
+
+.carousel-inner a.wp-block-button__link.has-white-color.has-text-color.has-background.wp-element-button:hover {
+    text-decoration: none;
+    background-color: var(--dark-red) !important;
+}
 
 /* parts/header.html */
+
+.sticky-nav .wp-block-navigation-item__content, .sticky-nav .wp-block-navigation-item__content .wp-block-navigation-item__label {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    vertical-align: middle; 
+}
 
 @media only screen and (min-width: 850px) {
     nav.wp-block-navigation.is-layout-flex ul li {
@@ -31,7 +88,7 @@ Theme Name: The Office Supply Outlet Block Theme
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-color: #fff;
+    background-color: var(--main-bk-color);
     z-index: 10;
 }
 
@@ -70,6 +127,24 @@ a[href*="Company"].wp-block-navigation-item__content  {
     padding-right: 0;
 }
 
+.sticky-nav li a.wp-block-navigation-item__content:hover {
+    text-decoration: none;
+    color: var(--bright-red);
+}
+
+.custom-logo-link {
+    overflow: hidden;
+}
+
+.custom-logo-link img {
+    transition: all 1s ease-in;
+}
+
+.custom-logo-link img:hover {
+    transform: scale(0.9);
+}
+
+
 
 /* templates/archive-product.html */
 
@@ -91,8 +166,27 @@ a[href*="Company"].wp-block-navigation-item__content  {
 }
 
 a.button.wp-element-button.product_type_simple.add_to_cart_button.ajax_add_to_cart:hover {
-    color: #fff;
+    color: var(--main-bk-color);
 
+}
+
+.product-grid-container ul li {
+    overflow: hidden;
+}
+
+.product-grid-container ul li a img {
+    transition: 1s ease;
+}
+
+.product-grid-container .woocommerce-LoopProduct-link.woocommerce-loop-product__link img:hover {
+    transform: scale(1.5);
+}
+
+.product-grid-container ul li a img + h2 {
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    background-color: var(--main-bk-color);
 }
 
     /* Button hover effect adapted from: https: //codepen.io/giana/pen/xdXpJB */
@@ -127,13 +221,13 @@ a.button.wp-element-button.product_type_simple.add_to_cart_button.ajax_add_to_ca
 }
 
 a.button.wp-element-button.product_type_simple.add_to_cart_button.ajax_add_to_cart:hover {
-    color: #fff;
+    color: var(--main-bk-color);
     background-color: #440a0a;
 }
 
 a.button.wp-element-button.product_type_simple.add_to_cart_button.ajax_add_to_cart:hover::before,
 a.button.wp-element-button.product_type_simple.add_to_cart_button.ajax_add_to_cart:hover::after {
-    border-color: #8c1e1e;
+    border-color: var(--dark-red);
     transition: border-color 0s, width 0.25s, height 0.25s;
     width: 100%;
     height: 100%;
@@ -164,6 +258,25 @@ a.button.wp-element-button.product_type_simple.add_to_cart_button.ajax_add_to_ca
     -ms-flex: 0 0 83.333333%;
     flex: 0 0 83.333333%;
     max-width: 83.333333%;
+}
+
+.related.products li {
+    overflow: hidden;
+}
+
+.related.products li a img {
+    transition: 1s ease;
+}
+
+.related.products li a img:hover {
+    transform: scale(1.5);
+}
+
+.related.products li a img+h2 {
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    background-color: var(--main-bk-color);
 }
 
     /* Button hover effect adapted from: https: //codepen.io/giana/pen/xdXpJB */
@@ -198,13 +311,13 @@ button.single_add_to_cart_button.button.alt.wp-element-button::after {
 }
 
 button.single_add_to_cart_button.button.alt.wp-element-button:hover {
-    color: #fff;
+    color: var(--main-bk-color);
     background-color: #440a0a;
 }
 
 button.single_add_to_cart_button.button.alt.wp-element-button:hover::before,
 button.single_add_to_cart_button.button.alt.wp-element-button:hover::after {
-    border-color: #8c1e1e;
+    border-color: var(--dark-red);
     transition: border-color 0s, width 0.25s, height 0.25s;
     width: 100%;
     height: 100%;
@@ -281,7 +394,7 @@ button.single_add_to_cart_button.button.alt.wp-element-button:hover::after {
     background-color: rgb(126, 26, 26) !important;
 }
 
-/* index.html */
+/* templates/index.html */
 
 .index-query-loop-container {
     display: flex;
@@ -291,7 +404,7 @@ button.single_add_to_cart_button.button.alt.wp-element-button:hover::after {
 
 @media only screen and (max-width: 767px) {
     .index-query-loop-container .wp-block-query.is-layout-flow {
-        width: 90%;
+        width: 93%;
     }
 }
 
@@ -306,4 +419,112 @@ button.single_add_to_cart_button.button.alt.wp-element-button:hover::after {
     .index-query-loop-container .wp-block-query.is-layout-flow {
         width: 70%;
     }
+}
+
+/* .index-query-loop-container .attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
+    width: 70%;
+} */
+
+/* .index-query-loop-container .wp-block-post-featured-image {
+    width: 70%;
+} */
+
+/* .index-query-loop-container .wp-block-columns.is-layout-flex .wp-block-column.is-layout-flow:first-child {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+} */
+/* 
+.wp-block-post-featured-image img {
+    max-width: 80%;
+    vertical-align: middle;
+    width: 80%;
+} */
+
+.individual-post-container .wp-block-column.is-layout-flow:first-child {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.individual-post-container .wp-block-column.is-layout-flow figure {
+    overflow: hidden;
+}
+
+.individual-post-container .wp-block-column.is-layout-flow figure img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transition: all 1s ease-in;
+}
+
+.individual-post-container .wp-block-column.is-layout-flow figure img:hover {
+    transform: scale(1.20);
+}
+
+@media only screen and (min-width: 850px) {
+    .individual-post-container .wp-block-column.is-layout-flow:first-child {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
+.individual-post-container .wp-block-post-title a {
+    font-family: "Roboto", sans-serif; 
+    color: var(--bright-red);
+}
+
+.individual-post-container .wp-block-post-title a:hover {
+    color: var(--dark-red);
+    text-decoration: none;
+}
+
+.individual-post-container .wp-block-read-more {
+    color: rgb(46, 128, 187);
+    font: var(--font-segoe);
+    font-size: 1.3rem;
+}
+
+.individual-post-container .wp-block-read-more:hover {
+    color: rgb(26, 26, 87);
+}
+
+.blog-heading-container h2 {
+    padding-top: 10px;
+    /* padding-bottom: 4px; */
+    font-family: "Poppins", sans-serif;
+    font-family: "Segoe Ui Bold", sans-serif;
+    font-size: 3.5rem;
+    /* color: rgb(204, 2, 2); */
+    color: #343031;
+}
+
+.blog-heading-container h2 + p {
+    padding-bottom: 20px;
+}
+
+.individual-post-container .is-layout-flow > .wp-block-post-author-name,
+.individual-post-container .is-layout-flow > .wp-block-post-date {
+    /* padding-top: 4px; */
+    margin-bottom: 0 !important;
+    margin-block-start: 2px !important;
+}
+
+.individual-post-container .is-layout-flow>.wp-block-post-author-name {
+    padding-top: 4px;
+}
+
+.individual-post-container .is-layout-flow>.wp-block-post-date {
+    padding-top: 2px;
+}
+
+.wp-block-query-pagination a {
+color: var(--bright-red) ;
+    font: var(--font-segoe);
+}
+
+.wp-block-query-pagination a:hover {
+    color: var(--dark-red) ;
+    text-decoration: none;
 }

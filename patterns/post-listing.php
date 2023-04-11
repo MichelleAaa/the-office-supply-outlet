@@ -15,8 +15,8 @@
 <div class="wp-block-query"><!-- wp:post-template -->
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:columns -->
-<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:columns {"className":"individual-post-container"} -->
+<div class="wp-block-columns individual-post-container"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:post-featured-image /--></div>
 <!-- /wp:column -->
 
