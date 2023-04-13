@@ -1,6 +1,8 @@
 <?php
 
 function wpbootstrap_enqueue_styles() {
+    wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
     wp_enqueue_style( 'bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css' );
 
     wp_register_script('jquery-3.5.1', 'https://code.jquery.com/jquery-3.5.1.js', false, '3.5.1', true);
@@ -16,6 +18,7 @@ function wpbootstrap_enqueue_styles() {
 }
 
 add_action('wp_enqueue_scripts', 'wpbootstrap_enqueue_styles');
+
 
 // For non-editable blocks:
 class PlaceholderBlock {
