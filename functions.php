@@ -5,6 +5,8 @@ function wpbootstrap_enqueue_styles() {
 
     wp_enqueue_style( 'bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css' );
 
+    wp_enqueue_script('main-js', get_theme_file_uri('index.js'), array('jquery'), '1.0', true);
+
     wp_register_script('jquery-3.5.1', 'https://code.jquery.com/jquery-3.5.1.js', false, '3.5.1', true);
 
     wp_register_script('popper', 'https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js', false, '1.16.1', true);
@@ -19,8 +21,29 @@ function wpbootstrap_enqueue_styles() {
 
 add_action('wp_enqueue_scripts', 'wpbootstrap_enqueue_styles');
 
+function custom_post_types(){
+  register_post_type('faq', array(
+    'show_in_rest' => true, 
+    'supports' => array('title', 'editor', 'thumbnail'), 
+    'rewrite' => array('slug' => 'faq'), 
+    'public' => true, 	
+    'taxonomies'  => array( 'category' ),
+    // 'has_archive' => true, // In order for the new post type to have an archive, we have to add this line.  – The archive can typically be accessed with the site url + /(new post type – in this case “/event/”
+    //Note that the archive will by default be powered by archive.php. If you want a new theme file that's only responsible for the event archive, you would need to create a new file in the theme's folder with the rest of the .php files. The name of the file must be archive-(name of custom post type).php. In this case, it's archive-event.php
+    'menu_icon' => 'dashicons-clipboard', 
+    'labels' => array(
+      'name' => "FAQs", 
+      'add_new_item' => "Add New FAQ",
+        'edit_item' => 'Edit FAQ',
+        'all_items' => "All FAQs",
+        'singular_name' => 'FAQ'
+    ) 
+  ));
+}
 
-// For non-editable blocks:
+add_action('init', 'custom_post_types');
+
+// For blocks that are not editable in the full site editor:
 class PlaceholderBlock {
   function __construct($name) {
     $this->name = $name;
@@ -44,4 +67,5 @@ class PlaceholderBlock {
 }
 
 new PlaceholderBlock("contactusform");
+new PlaceholderBlock("faqlist");
 
