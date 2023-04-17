@@ -8,6 +8,16 @@ function togglePlusMinus(e) {
     e.preventDefault();
 
     let spanContent = e.target.children[0];
+    let spanClass = spanContent.classList[0];
+
+    btns.forEach(btn => {
+        let btnSpan = btn.querySelector('span');
+        let btnSpanClass = btnSpan.classList;
+
+        if (btnSpan != spanContent && btnSpanClass == spanClass){
+            btnSpan.innerText = "+";
+        }
+    })
 
     if (spanContent.innerText == "+"){
         spanContent.innerText = "-";

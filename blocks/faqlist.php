@@ -25,7 +25,7 @@
         )); 
 
         ?>
-        <div>
+        <div class="faq-card-title">
           <h3 class="text-center"><?php echo $category_names[$count][1]; ?></h3>
         </div>
         <div class="accordion" id="accordion-<?php echo $count; ?>">
@@ -39,9 +39,9 @@
           <div class="card">
             <div class="card-header" id="heading-<?php echo $post_number; ?>">
               <h2 class="mb-0">
-                <button class="btn btn-link btn-block text-left d-flex justify-content-between flex-row <?php echo $post_number; ?>-slider" type="button" data-toggle="collapse" data-target="#collapse-<?php echo $post_number; ?>" aria-expanded="true" aria-controls="collapse<?php echo $post_number; ?>">
+                <button class="btn btn-link btn-block text-left d-flex justify-content-between flex-row" type="button" data-toggle="collapse" data-target="#collapse-<?php echo $post_number; ?>" aria-expanded="true" aria-controls="collapse<?php echo $post_number; ?>">
                   <?php the_title(); ?>
-                  <span class="<?php echo $post_number; ?>-slider">
+                  <span class="<?php echo $category_names[$count][0]; ?>">
                   +
                 </span>
                 </button>
@@ -66,4 +66,3 @@
     </div>
   </div>
 </div>
-<!-- <script src="<?php echo get_stylesheet_directory_uri(); ?>/index.js"  type="text/javascript"></script> -->
