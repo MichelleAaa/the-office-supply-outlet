@@ -282,6 +282,8 @@ a.button.wp-element-button.product_type_simple.add_to_cart_button.ajax_add_to_ca
 /* Site Button - Dark Gray Background/White Text - Dark red with dark red border on Hover */
     /* Button hover effect adapted from: https: //codepen.io/giana/pen/xdXpJB */
 
+form.checkout_coupon.woocommerce-form-coupon button.button.wp-element-button,
+form.checkout.woocommerce-checkout .woocommerce-checkout-payment button#place_order,
 .wc-proceed-to-checkout a.checkout-button,
 .woocommerce-cart-form .coupon button.button.wp-element-button,
 .my-account-container .woocommerce-address-fields button.button.wp-element-button,
@@ -293,6 +295,10 @@ button.single_add_to_cart_button.button.alt.wp-element-button,
     position: relative;
 }
 
+form.checkout_coupon.woocommerce-form-coupon button.button.wp-element-button::before,
+form.checkout_coupon.woocommerce-form-coupon button.button.wp-element-button::after,
+form.checkout.woocommerce-checkout .woocommerce-checkout-payment button#place_order::before,
+form.checkout.woocommerce-checkout .woocommerce-checkout-payment button#place_order::after,
 .wc-proceed-to-checkout a.checkout-button::before,
 .wc-proceed-to-checkout a.checkout-button::after,
 .woocommerce-cart-form .coupon button.button.wp-element-button::before,
@@ -316,6 +322,8 @@ button.single_add_to_cart_button.button.alt.wp-element-button::after,
     right: 0;
 }
 
+form.checkout_coupon.woocommerce-form-coupon button.button.wp-element-button::before,
+form.checkout.woocommerce-checkout .woocommerce-checkout-payment button#place_order::before,
 .wc-proceed-to-checkout a.checkout-button::before,
 .woocommerce-cart-form .coupon button.button.wp-element-button::before,
 .my-account-container .woocommerce-address-fields button.button.wp-element-button::before,
@@ -326,6 +334,8 @@ button.single_add_to_cart_button.button.alt.wp-element-button::before,
     border-left-width: 4px;
 }
 
+form.checkout_coupon.woocommerce-form-coupon button.button.wp-element-button::after,
+form.checkout.woocommerce-checkout .woocommerce-checkout-payment button#place_order::after,
 .wc-proceed-to-checkout a.checkout-button::after,
 .woocommerce-cart-form .coupon button.button.wp-element-button::after,
 .my-account-container .woocommerce-address-fields button.button.wp-element-button::after,
@@ -336,6 +346,8 @@ button.single_add_to_cart_button.button.alt.wp-element-button::after,
     border-right-width: 4px;
 }
 
+form.checkout_coupon.woocommerce-form-coupon button.button.wp-element-button:hover,
+form.checkout.woocommerce-checkout .woocommerce-checkout-payment button#place_order:hover,
 .wc-proceed-to-checkout a.checkout-button:hover,
 .woocommerce-cart-form .coupon button.button.wp-element-button:hover,
 .my-account-container .woocommerce-address-fields button.button.wp-element-button:hover,
@@ -346,6 +358,10 @@ button.single_add_to_cart_button.button.alt.wp-element-button:hover,
     background-color: #440a0a;
 }
 
+form.checkout_coupon.woocommerce-form-coupon button.button.wp-element-button:hover::before,
+form.checkout_coupon.woocommerce-form-coupon button.button.wp-element-button:hover::after,
+form.checkout.woocommerce-checkout .woocommerce-checkout-payment button#place_order:hover::after,
+form.checkout.woocommerce-checkout .woocommerce-checkout-payment button#place_order:hover::before,
 .wc-proceed-to-checkout a.checkout-button:hover::before,
 .wc-proceed-to-checkout a.checkout-button:hover::after,
 .woocommerce-cart-form .coupon button.button.wp-element-button:hover::before,
@@ -364,6 +380,8 @@ button.single_add_to_cart_button.button.alt.wp-element-button:hover::after,
     height: 100%;
 }
 
+form.checkout_coupon.woocommerce-form-coupon button.button.wp-element-button:hover::before,
+form.checkout.woocommerce-checkout .woocommerce-checkout-payment button#place_order:hover::before,
 .wc-proceed-to-checkout a.checkout-button:hover::before,
 .woocommerce-cart-form .coupon button.button.wp-element-button:hover::before,
 .my-account-container .woocommerce-address-fields button.button.wp-element-button:hover::before,
@@ -373,6 +391,8 @@ button.single_add_to_cart_button.button.alt.wp-element-button:hover::before,
     transition-delay: 0s, 0s, 0.25s;
 }
 
+form.checkout_coupon.woocommerce-form-coupon button.button.wp-element-button:hover::after,
+form.checkout.woocommerce-checkout .woocommerce-checkout-payment button#place_order:hover::after,
 .wc-proceed-to-checkout a.checkout-button:hover::after,
 .woocommerce-cart-form .coupon button.button.wp-element-button:hover::after,
 .my-account-container .woocommerce-address-fields button.button.wp-element-button:hover::after,
@@ -381,8 +401,6 @@ button.single_add_to_cart_button.button.alt.wp-element-button:hover::after,
 .woocommerce-MyAccount-content .woocommerce-Button.button.wp-element-button:hover::after {
     transition-delay: 0s, 0.25s, 0s;
 }
-
-/* templates/page-contact-us.html */
 
 
 /* patterns/contact-us-icons.php */
@@ -558,6 +576,12 @@ color: var(--bright-red) ;
 .wp-block-query-pagination a:hover {
     color: var(--dark-red) ;
     text-decoration: none;
+}
+
+.blog-search-form-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 /* templates/front-page.html */
@@ -795,4 +819,65 @@ color: var(--bright-red) ;
 
 .previous-next-post-container span {
     color: var(--bright-red);
+}
+
+/* woocommerce checkout */
+
+form.checkout.woocommerce-checkout #customer_details,
+form.checkout.woocommerce-checkout #order_review_heading  {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+form.checkout.woocommerce-checkout table.shop_table.woocommerce-checkout-review-order-table {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+form.checkout.woocommerce-checkout .col-1 {
+-ms-flex: 0 0 80%;
+    flex: 0 0 80%;
+    max-width: 80%;
+}
+
+form.checkout.woocommerce-checkout label {
+    padding-right: 10px;
+}
+
+form.checkout.woocommerce-checkout .col-2 {
+    -ms-flex: 0 0 80%;
+    flex: 0 0 80%;
+    max-width: 80%;
+}
+
+form.checkout.woocommerce-checkout textarea.input-text {
+    width: 300px !important;
+    height: 300px !important;
+}
+
+form.checkout.woocommerce-checkout .woocommerce-privacy-policy-text p {
+    padding-right: 10px;
+}
+
+
+/* parts/footer.html */
+
+footer nav.wp-block-navigation.is-layout-flex {
+    margin-right: 0;
+}
+
+footer nav.wp-block-navigation.is-layout-flex {
+    height: auto;
+}
+
+@media only screen and (max-width: 781px) {
+    footer nav.wp-block-navigation.is-layout-flex {
+        line-height: inherit;
+    }
+    footer nav.wp-container-31.wp-container-31 {
+        align-items: flex-start !important;
+    }
+    footer nav.wp-block-navigation.items-justified-right.is-vertical {
+        --navigation-layout-align: flex-start;
+    }
 }
