@@ -26,3 +26,14 @@ function togglePlusMinus(e) {
     }
 }
 
+
+// For Navbar - Woocommerce Search
+
+// The woocommerce search bar in the nav will auto-fill the value if the blog search bar is used in the News & Ideas section. This code is to clear the value from the woocommerce search bar, which only searches for products.
+
+window.addEventListener("DOMContentLoaded", clearInputValue);
+
+function clearInputValue() {
+    let navSearch = document.querySelector('nav #wp-block-search__input-1');
+    navSearch.value = "";
+}

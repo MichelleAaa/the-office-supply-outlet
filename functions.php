@@ -68,4 +68,5 @@ class PlaceholderBlock {
 
 new PlaceholderBlock("contactusform");
 new PlaceholderBlock("faqlist");
+new PlaceholderBlock("blogsearchresults");
 
