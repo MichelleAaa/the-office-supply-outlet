@@ -1,4 +1,4 @@
-<form method="post" action="<?php echo site_url('/contact-confirmation'); ?>">
+<form method="post" action="<?php echo site_url('/contact-confirmation'); ?>" class="contact-us-form">
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"35px","right":"35px","bottom":"35px","left":"35px"}},"color":{"gradient":"linear-gradient(245deg,rgb(198,2,2) 16%,rgb(204,2,2) 54%,rgb(155,81,224) 54%,rgb(52, 48, 49) 54%)"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull has-background contact-us-form-wrapper" style="background:linear-gradient(245deg,rgb(198,2,2) 16%,rgb(204,2,2) 54%,rgb(155,81,224) 54%,rgb(52, 48, 49) 54%);padding-top:35px;padding-bottom:35px;"><!-- wp:html -->
 <p style="text-align: center"><span style="font-weight: 600;font-size: 14px;line-height: 22px;text-transform: uppercase;color: #fff;background: rgb(52, 48, 49);padding: 4px 8px;margin: 0 0 10px;letter-spacing: 0.04em;text-align: center">contact us</span></p>
