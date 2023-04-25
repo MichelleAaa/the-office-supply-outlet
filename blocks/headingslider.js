@@ -1,5 +1,5 @@
-wp.blocks.registerBlockType("ourblocktheme/blogsearchresults", {
-    title: "Blog Search Results",
+wp.blocks.registerBlockType("ourblocktheme/headingslider", {
+    title: "Heading Slider",
     edit: function () {
         return wp.element.createElement("div", { className: "placeholder-block" }, "Blog Search Results Placeholder")
     },

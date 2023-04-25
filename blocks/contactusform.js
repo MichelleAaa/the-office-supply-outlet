@@ -1,7 +1,7 @@
 wp.blocks.registerBlockType("ourblocktheme/contactusform", {
     title: "Contact Us Form",
     edit: function () {
-        return wp.element.createElement("div", { className: "our-placeholder-block" }, "Contact Us Form Placeholder")
+        return wp.element.createElement("div", { className: "placeholder-block" }, "Contact Us Form Placeholder")
     },
     save: function () {
         return null

@@ -28,8 +28,6 @@ function custom_post_types(){
     'rewrite' => array('slug' => 'faq'), 
     'public' => true, 	
     'taxonomies'  => array( 'category' ),
-    // 'has_archive' => true, // In order for the new post type to have an archive, we have to add this line.  – The archive can typically be accessed with the site url + /(new post type – in this case “/event/”
-    //Note that the archive will by default be powered by archive.php. If you want a new theme file that's only responsible for the event archive, you would need to create a new file in the theme's folder with the rest of the .php files. The name of the file must be archive-(name of custom post type).php. In this case, it's archive-event.php
     'menu_icon' => 'dashicons-clipboard', 
     'labels' => array(
       'name' => "FAQs", 
@@ -37,6 +35,21 @@ function custom_post_types(){
         'edit_item' => 'Edit FAQ',
         'all_items' => "All FAQs",
         'singular_name' => 'FAQ'
+    ) 
+  ));
+  register_post_type('header-slides', array(
+    'show_in_rest' => true, 
+    'supports' => array('title', 'editor', 'thumbnail', 'custom-fields'), 
+    'rewrite' => array('slug' => 'header'), 
+    'public' => true,   
+    // 'has_archive' => true, 
+    'menu_icon' => 'dashicons-clipboard', 
+    'labels' => array(
+      'name' => "Header Slides", 
+      'add_new_item' => "Add New Header Slide",
+        'edit_item' => 'Edit Header Slide',
+        'all_items' => "All Header Slides",
+        'singular_name' => 'Header Slide'
     ) 
   ));
 }
@@ -69,4 +82,5 @@ class PlaceholderBlock {
 new PlaceholderBlock("contactusform");
 new PlaceholderBlock("faqlist");
 new PlaceholderBlock("blogsearchresults");
+new PlaceholderBlock("headingslider");
 
