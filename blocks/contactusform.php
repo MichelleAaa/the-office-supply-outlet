@@ -1,4 +1,4 @@
-<form method="post" action="<?php echo site_url('/contact-confirmation'); ?>" class="contact-us-form">
+<form method="post" action="<?php echo site_url("/contact-confirmation"); ?>" class="contact-us-form">
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"35px","right":"35px","bottom":"35px","left":"35px"}},"color":{"gradient":"linear-gradient(245deg,rgb(198,2,2) 16%,rgb(204,2,2) 54%,rgb(155,81,224) 54%,rgb(52, 48, 49) 54%)"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull has-background contact-us-form-wrapper" style="background:linear-gradient(245deg,rgb(198,2,2) 16%,rgb(204,2,2) 54%,rgb(155,81,224) 54%,rgb(52, 48, 49) 54%);padding-top:35px;padding-bottom:35px;"><!-- wp:html -->
 <p style="text-align: center"><span style="font-weight: 600;font-size: 14px;line-height: 22px;text-transform: uppercase;color: #fff;background: rgb(52, 48, 49);padding: 4px 8px;margin: 0 0 10px;letter-spacing: 0.04em;text-align: center">contact us</span></p>
@@ -11,11 +11,11 @@
 <div class="wp-block-columns" style="margin-top:10px;margin-bottom:10px;justify-content:space-between;"><!-- wp:column -->
 <div class="wp-block-column" style="flex: 0 0 50%;"><!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"textAlign":"left","width":100,"style":{"color":{"background":"#f4f6f9","text":"#666666c2"},"border":{"radius":"2px"},"typography":{"fontSize":"15px"}},"className":"is-style-fill"} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100 has-custom-font-size is-style-fill contact-input-container-left" style="font-size:15px"><input type="text" name="name" placeholder="Your Name" class="wp-block-button__link has-text-color has-background has-text-align-left wp-element-button" style="border-radius:2px;color:#666666c2;background-color:#f4f6f9;margin-bottom:7px;"/></div>
+<div class="wp-block-button has-custom-width wp-block-button__width-100 has-custom-font-size is-style-fill contact-input-container-left" style="font-size:15px"><input type="text" name="yourname" placeholder="Your Name" class="wp-block-button__link has-text-color has-background has-text-align-left wp-element-button" style="border-radius:2px;color:#666666c2; background-color:#f4f6f9;margin-bottom:7px;" required/></div>
 <!-- /wp:button -->
 
 <!-- wp:button {"textAlign":"left","width":100,"style":{"color":{"background":"#f4f6f9","text":"#666666c2"},"border":{"radius":"2px"},"typography":{"fontSize":"15px"}},"className":"is-style-fill"} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100 has-custom-font-size is-style-fill contact-input-container-left" style="font-size:15px;margin-bottom:7px;"><input type="phone" name="tel" placeholder="Phone Number" class="wp-block-button__link has-text-color has-background has-text-align-left wp-element-button" style="border-radius:2px;color:#666666c2;background-color:#f4f6f9"/></div>
+<div class="wp-block-button has-custom-width wp-block-button__width-100 has-custom-font-size is-style-fill contact-input-container-left" style="font-size:15px;margin-bottom:7px;"><input type="phone" name="tel" placeholder="Phone Number" class="wp-block-button__link has-text-color has-background has-text-align-left wp-element-button" style="border-radius:2px;color:#666666c2;background-color:#f4f6f9" required/></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column -->
@@ -23,11 +23,11 @@
 <!-- wp:column -->
 <div class="wp-block-column" style="flex: 0 0 50%;"><!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"textAlign":"left","width":100,"style":{"color":{"background":"#f4f6f9","text":"#666666c2"},"border":{"radius":"2px"},"typography":{"fontSize":"15px"}},"className":"is-style-fill"} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100 has-custom-font-size is-style-fill contact-input-container-right" style="font-size:15px"><input type="text" name="email" placeholder="Your Email" class="wp-block-button__link has-text-color has-background has-text-align-left wp-element-button" style="border-radius:2px;color:#666666c2;background-color:#f4f6f9;margin-bottom:7px;"/></div>
+<div class="wp-block-button has-custom-width wp-block-button__width-100 has-custom-font-size is-style-fill contact-input-container-right" style="font-size:15px"><input type="text" name="email" placeholder="Your Email" class="wp-block-button__link has-text-color has-background has-text-align-left wp-element-button" style="border-radius:2px;color:#666666c2;background-color:#f4f6f9;margin-bottom:7px;" pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$' title="youremailaddress@domain.com" required /></div>
 <!-- /wp:button -->
 
 <!-- wp:button {"textAlign":"left","width":100,"style":{"color":{"background":"#f4f6f9","text":"#666666c2"},"border":{"radius":"2px"},"typography":{"fontSize":"15px"}},"className":"is-style-fill"} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100 has-custom-font-size is-style-fill contact-input-container-right" style="font-size:15px"><input type="text" name="subject" placeholder="Subject" class="wp-block-button__link has-text-color has-background has-text-align-left wp-element-button" style="border-radius:2px;color:#666666c2;background-color:#f4f6f9"/></div>
+<div class="wp-block-button has-custom-width wp-block-button__width-100 has-custom-font-size is-style-fill contact-input-container-right" style="font-size:15px"><input type="text" name="subject" placeholder="Subject" class="wp-block-button__link has-text-color has-background has-text-align-left wp-element-button" style="border-radius:2px;color:#666666c2;background-color:#f4f6f9" required/></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>
@@ -35,7 +35,7 @@
 
 <!-- wp:buttons {"layout":{"type":"flex","orientation":"horizontal"},"style":{"spacing":{"margin":{"top":"0px"}}}} -->
 <div class="wp-block-buttons" style="margin-top:0px"><!-- wp:button {"textAlign":"left","width":100,"style":{"color":{"background":"#f4f6f9","text":"#666666c2"},"border":{"radius":"2px"},"typography":{"fontSize":"15px"},"spacing":{"padding":{"top":"50px","bottom":"50px"}}},"className":"is-style-fill"} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100 has-custom-font-size is-style-fill" style="font-size:15px"><textarea type="text" name="message" placeholder="Write Your Message.........." class="wp-block-button__link has-text-color has-background has-text-align-left wp-element-button" style="border-radius:2px;color:#666666c2;background-color:#f4f6f9;padding-top:50px;padding-bottom:50px"></textarea></div>
+<div class="wp-block-button has-custom-width wp-block-button__width-100 has-custom-font-size is-style-fill" style="font-size:15px"><textarea type="text" name="message" placeholder="Write Your Message.........." class="wp-block-button__link has-text-color has-background has-text-align-left wp-element-button" style="border-radius:2px;color:#666666c2;background-color:#f4f6f9;padding-top:50px;padding-bottom:50px" required></textarea></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 

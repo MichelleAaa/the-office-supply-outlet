@@ -21,7 +21,7 @@
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:post-title {"isLink":true,"linkTarget":"_blank"} /-->
+<div class="wp-block-column"><!-- wp:post-title {"isLink":true} /-->
 
 <!-- wp:post-excerpt /-->
 

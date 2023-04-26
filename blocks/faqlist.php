@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid mb-5">
   <div class="row d-flex justify-content-center align-items-center">
     <div class="col-11 col-md-8">
       <?php  
