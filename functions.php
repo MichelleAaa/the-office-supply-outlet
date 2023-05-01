@@ -1,8 +1,6 @@
 <?php
 
 function wpbootstrap_enqueue_styles() {
-    // wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-
     wp_enqueue_style( 'bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css' );
 
     wp_enqueue_script('main-js', get_theme_file_uri('index.js'), array('jquery'), '1.0', true);
@@ -16,7 +14,6 @@ function wpbootstrap_enqueue_styles() {
     wp_enqueue_style('main_styles', get_stylesheet_uri());
 
     wp_enqueue_style('custom-google-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400|Roboto:400|Source+Sans+Pro:600|Forum:600|Poppins:200');
-
 }
 
 add_action('wp_enqueue_scripts', 'wpbootstrap_enqueue_styles');
@@ -42,7 +39,6 @@ function custom_post_types(){
     'supports' => array('title', 'editor', 'thumbnail', 'custom-fields'), 
     'rewrite' => array('slug' => 'header'), 
     'public' => true,   
-    // 'has_archive' => true, 
     'menu_icon' => 'dashicons-clipboard', 
     'labels' => array(
       'name' => "Header Slides", 
@@ -56,7 +52,7 @@ function custom_post_types(){
 
 add_action('init', 'custom_post_types');
 
-// For blocks that are not editable in the full site editor:
+// For blocks that are not editable in the full site editor (Adapted from: https://www.udemy.com/course/become-a-wordpress-developer-php-javascript/):
 class PlaceholderBlock {
   function __construct($name) {
     $this->name = $name;
@@ -83,4 +79,3 @@ new PlaceholderBlock("contactusform");
 new PlaceholderBlock("faqlist");
 new PlaceholderBlock("blogsearchresults");
 new PlaceholderBlock("headingslider");
-
