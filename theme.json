@@ -2,6 +2,86 @@
 	"$schema": "https://schemas.wp.org/wp/6.2/theme.json",
 	"version": 2,
 	"settings": {
-		"appearanceTools": true
-	}
+		"appearanceTools": true,
+		"color": {
+			"palette": [
+				{
+					"slug": "bright-red",
+					"color": "#cc0202",
+					"name": "Bright Red"
+				},
+				{
+					"slug": "dark-red",
+					"color": "#8c1e1e",
+					"name": "Dark Red"
+				},
+				{
+					"slug": "light-gray",
+					"color": "#767676",
+					"name": "Light Gray"
+				},
+				{
+					"slug": "medium-gray",
+					"color": "#474747",
+					"name": "Medium Gray"
+				},
+				{
+					"slug": "dark-gray",
+					"color": "#343031",
+					"name": "Dark Gray"
+				}
+			]
+		},
+		"typography": {
+			"fontFamilies": [],
+			"fontStyle": false,
+			"fontWeight": false,
+			"letterSpacing": false,
+			"textDecoration": false,
+			"lineHeight": false,
+			"textTransform": false,
+			"dropCap": false,
+			"customFontSize": false,
+			"fontSizes": []
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "var:preset|color|white"
+		},
+		"elements": {
+			"heading": {
+				"typography": {
+					"textTransform": "capitalize"
+				}
+			},
+			"link": {
+				"typography": {
+					"textDecoration": "none"
+				}
+			}
+		},
+		"typography": {
+			"fontSize": "var:preset|font-size|medium",
+			"fontStyle": "normal",
+			"fontWeight": "500"
+		}
+	},
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header",
+			"title": "Header"
+		},
+		{
+			"area": "uncategorized",
+			"name": "mini-cart",
+			"title": "Mini Cart"
+		},
+		{
+			"area": "footer",
+			"name": "footer",
+			"title": "Footer"
+		}
+	]
 }

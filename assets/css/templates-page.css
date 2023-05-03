@@ -1,0 +1,12 @@
+.page-content-container {
+    margin-left: 5vw !important;
+    margin-right: 5vw !important;
+    margin-bottom: 50px !important;
+}
+
+@media only screen and (min-width: 1000px) {
+    .page-content-container {
+        margin-left: 10vw !important;
+        margin-right: 10vw !important;
+    }
+}

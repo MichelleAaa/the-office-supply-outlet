@@ -16,7 +16,7 @@
 <div class="wp-block-columns"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#f4f6f9"},"spacing":{"padding":{"top":"25px","right":"25px","bottom":"25px","left":"25px"}},"border":{"radius":"5px"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-background" style="border-radius:5px;background-color:#f4f6f9;padding-top:25px;padding-right:25px;padding-bottom:25px;padding-left:25px"><!-- wp:image {"align":"center","width":50,"height":50,"sizeSlug":"large","linkDestination":"none","style":{"color":{"duotone":["rgb(204,2,2)","rgb(185,2,2)"]}}} -->
-<figure class="wp-block-image aligncenter size-large is-resized"><img src="https://artoonsolutions.com/wp-content/themes/artoon/images/lp/footer_new/call_icon.svg" alt="" width="50" height="50"/></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="https://artoonsolutions.com/wp-content/themes/artoon/images/lp/footer_new/call_icon.svg" alt="phone icon" width="50" height="50"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"textAlign":"center","style":{"typography":{"fontSize":"26px"},"color":{"text":"#18100f"},"spacing":{"padding":{"top":"5px","bottom":"0px"}}}} -->
@@ -32,7 +32,7 @@
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#f4f6f9"},"spacing":{"padding":{"top":"25px","right":"25px","bottom":"25px","left":"25px"}},"border":{"radius":"5px"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-background" style="border-radius:5px;background-color:#f4f6f9;padding-top:25px;padding-right:25px;padding-bottom:25px;padding-left:25px"><!-- wp:image {"align":"center","width":50,"height":50,"sizeSlug":"large","linkDestination":"none","style":{"color":{"duotone":["rgb(204,2,2)","rgb(185,2,2)"]}}} -->
-<figure class="wp-block-image aligncenter size-large is-resized"><img src="https://artoonsolutions.com/wp-content/themes/artoon/images/lp/footer_new/address_icon.svg" alt="" width="50" height="50"/></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="https://artoonsolutions.com/wp-content/themes/artoon/images/lp/footer_new/address_icon.svg" alt="location icon" width="50" height="50"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"textAlign":"center","style":{"typography":{"fontSize":"26px"},"color":{"text":"#18100f"},"spacing":{"padding":{"top":"5px","bottom":"0px"}}}} -->
@@ -48,7 +48,7 @@
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#f4f6f9"},"spacing":{"padding":{"top":"25px","right":"25px","bottom":"25px","left":"25px"}},"border":{"radius":"5px"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group has-background" style="border-radius:5px;background-color:#f4f6f9;padding-top:25px;padding-right:25px;padding-bottom:25px;padding-left:25px"><!-- wp:image {"align":"center","width":50,"height":50,"sizeSlug":"large","linkDestination":"none","style":{"color":{"duotone":["rgb(204,2,2)","rgb(185,2,2)"]}}} -->
-<figure class="wp-block-image aligncenter size-large is-resized"><img src="https://artoonsolutions.com/wp-content/themes/artoon/images/lp/footer_new/email_icon.svg" alt="" width="50" height="50"/></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><img src="https://artoonsolutions.com/wp-content/themes/artoon/images/lp/footer_new/email_icon.svg" alt="email icon" width="50" height="50"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"textAlign":"center","style":{"typography":{"fontSize":"26px"},"color":{"text":"#18100f"},"spacing":{"padding":{"top":"5px","bottom":"0px"}}}} -->

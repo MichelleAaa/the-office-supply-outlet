@@ -1,0 +1,53 @@
+.my-account-container {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-top: 20px !important;
+}
+
+.my-account-container nav li a {
+    color: var(--bright-red);
+}
+
+.my-account-container nav li a:hover {
+    color: var(--dark-red);
+}
+
+.my-account-container .u-column1.col-1.woocommerce-Address,
+.my-account-container .u-column2.col-2.woocommerce-Address {
+    max-width: 100%;
+    margin-top: 13px;
+}
+
+.my-account-container .woocommerce-form-row label,
+.my-account-container .woocommerce-address-fields__field-wrapper label {
+    padding-right: 7px;
+}
+
+@media only screen and (max-width: 400px) {
+
+    .my-account-container .woocommerce-message .woocommerce-Button.button,
+    .my-account-container .woocommerce-Message a.woocommerce-Button.button {
+        font-size: 0.9rem;
+    }
+}
+
+/* Not Logged In */
+
+form.woocommerce-form label.woocommerce-form-login__rememberme {
+    margin-right: 5px;
+    margin-bottom: 0;
+}
+
+form.woocommerce-form p.form-row {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+form.lost_reset_password button:hover {
+    background-color: rgb(100, 100, 100);
+}
+
+form.woocommerce-form.woocommerce-form-login.login button.woocommerce-form-login__submit:hover {
+    background-color: #464b4f;
+}

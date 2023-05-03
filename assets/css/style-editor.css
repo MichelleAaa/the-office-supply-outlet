@@ -1,0 +1,8 @@
+.placeholder-block {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.65rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(#dedede), to(#adadad));
+    background: -o-linear-gradient(top, #dedede, #adadad);
+    background: linear-gradient(180deg, #dedede, #adadad);
+}

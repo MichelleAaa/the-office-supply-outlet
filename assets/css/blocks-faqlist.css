@@ -1,0 +1,16 @@
+.faq-card-title {
+    padding-top: 15px;
+}
+
+.card-header {
+    padding: 0;
+}
+
+.accordion .card .card-header button {
+    color: var(--main-bk-color);
+    background-color: var(--bright-red);
+}
+
+.container-fluid.mb-5 .card-header span {
+    margin-left: 7px;
+}

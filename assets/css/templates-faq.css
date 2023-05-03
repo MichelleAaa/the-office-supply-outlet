@@ -1,0 +1,40 @@
+.text-heading-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.text-heading-container h2 {
+    font-size: 2.7rem;
+}
+
+@media only screen and (max-width: 750px) {
+    .text-heading-container h2 {
+        font-size: 2.3rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .text-heading-container h2 {
+        font-size: 2rem;
+    }
+}
+
+.text-heading-container h2,
+.text-heading-container p {
+    -ms-flex: 0 0 83.333333%;
+    -webkit-box-flex: 0;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+    text-align: center;
+}

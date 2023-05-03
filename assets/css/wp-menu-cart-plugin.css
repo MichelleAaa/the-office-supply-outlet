@@ -1,0 +1,75 @@
+/* Cart in Nav & View Cart Button (after clicking to add an item to the cart) - From WP Menu Cart Plugin */
+
+.featured-items-container .wp-block-button.wc-block-grid__product-add-to-cart a.ajax_add_to_cart:focus,
+.featured-items-container .wp-block-button.wc-block-grid__product-add-to-cart a.ajax_add_to_cart:focus::before,
+.featured-items-container .wp-block-button.wc-block-grid__product-add-to-cart a.ajax_add_to_cart:focus::after {
+    border: 0px solid transparent;
+    overflow: hidden;
+}
+
+.wp-block-button.wc-block-grid__product-add-to-cart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+a.added_to_cart.wc-forward {
+    -webkit-box-shadow: inherit;
+    box-shadow: inherit;
+    color: white;
+    background-color: #77a464;
+    -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    width: 85px;
+    display: block;
+    padding: 3px;
+    padding-left: 4px;
+    margin-top: 4px;
+    text-align: left;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    -webkit-transition: all 0.75s ease-in;
+    -o-transition: all 0.75s ease-in;
+    transition: all 0.75s ease-in;
+}
+
+a.added_to_cart.wc-forward:hover {
+    background-color: #4e6b41;
+}
+
+a.wpmenucart-contents:hover {
+    text-decoration: none;
+    color: var(--bright-red);
+}
+
+a.wpmenucart-contents:hover span,
+#wpmenucartli span:hover {
+    color: var(--bright-red);
+}
+
+a.wpmenucart-contents i.wpmenucart-icon-shopping-cart-0 {
+    margin-right: 3px;
+}
+
+.wpmenucart-contents span.cartcontents {
+    font-family: var(--font-poppins);
+    font-weight: 200;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: var(--dark-gray);
+    text-transform: capitalize;
+}
+
+.wpmenucart-contents span.cartcontents:hover {
+    color: var(--dark-gray);
+}

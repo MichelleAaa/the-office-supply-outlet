@@ -1,0 +1,43 @@
+@media only screen and (min-width: 703px) {
+    .contact-input-container-left {
+        padding-right: 2px;
+    }
+
+    .contact-input-container-right {
+        padding-left: 2px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .contact-us-form-wrapper {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .contact-us-form-wrapper {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .contact-us-form-wrapper {
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+}
+
+.contact-us-form-wrapper input,
+.contact-us-form-wrapper textarea {
+    width: 100%;
+}
+
+.contact-us-form-wrapper button:hover {
+    background-color: rgb(126, 26, 26) !important;
+}
+
+form.contact-us-form button {
+    margin-top: 4px;
+}

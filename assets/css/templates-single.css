@@ -1,0 +1,87 @@
+.blog-home-back-container {
+    margin-left: 5vw !important;
+}
+
+.blog-home-back-container a {
+    color: var(--bright-red);
+}
+
+.blog-home-back-container a:hover {
+    color: var(--dark-red);
+}
+
+.text-heading-container {
+    margin-top: 35px;
+}
+
+.post-content-container {
+    margin-top: 40px;
+}
+
+.post-author-date-details-container .wp-block-post-date {
+    margin-top: 0;
+}
+
+.post-author-date-details-container .wp-block-post-author-name,
+.post-author-date-details-container .wp-block-post-date {
+    color: var(--light-gray);
+}
+
+.comments-block-container input#submit:hover {
+    background-color: #440a0a;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .post-content-container,
+    .post-author-date-details-container,
+    .comments-block-container {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .post-content-container,
+    .post-author-date-details-container,
+    .comments-block-container {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .post-content-container,
+    .post-author-date-details-container,
+    .comments-block-container {
+        padding-left: 15vw;
+        padding-right: 15vw;
+    }
+}
+
+.wp-block-post-comments-form .comment-form-cookies-consent #wp-comment-cookies-consent {
+    margin-top: 0;
+}
+
+.comment-form-cookies-consent label {
+    padding-left: 3px;
+    margin-bottom: 0;
+}
+
+.previous-next-post-container {
+    margin-bottom: 17px;
+}
+
+.previous-next-post-container a {
+    color: var(--bright-red);
+}
+
+.previous-next-post-container a:hover {
+    color: var(--dark-red);
+}
+
+.previous-next-post-container span {
+    color: var(--bright-red);
+}

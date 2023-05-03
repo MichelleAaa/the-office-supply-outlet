@@ -1,0 +1,153 @@
+.carousel.slide {
+    -webkit-margin-before: 0;
+    margin-block-start: 0;
+}
+
+.carousel-inner+p {
+    height: 0;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 4%;
+}
+
+.carousel-inner h2.wp-block-heading {
+    font-family: var(--font-segoe) !important;
+    padding-bottom: 8px;
+}
+
+.carousel-inner h2.wp-block-heading+p {
+    padding-bottom: 10px;
+}
+
+.carousel-inner a.wp-block-button__link.has-white-color.has-text-color.has-background.wp-element-button:hover {
+    text-decoration: none;
+    background-color: var(--dark-red) !important;
+}
+
+.carousel-item img.wp-block-cover__image-background {
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height: 100%;
+    width: 100%;
+    max-height: none;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    outline: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.carousel-item h2,
+.carousel-item p {
+    color: white;
+}
+
+.carousel-item .wp-block-column h2 {
+    white-space: nowrap;
+}
+
+/* .carousel-item .wp-block-group.alignfull.has-background {
+    height: 400px !important;
+} */
+
+@media only screen and (max-width: 465px) {
+    .carousel-item .wp-block-cover__inner-container .wp-block-group.alignfull.has-background {
+        background: -o-linear-gradient(340deg, rgb(204, 2, 2) 0%, rgb(204, 2, 2) 70%, rgba(255, 255, 255, 0) 70%) !important;
+        background: linear-gradient(110deg, rgb(204, 2, 2) 0%, rgb(204, 2, 2) 70%, rgba(255, 255, 255, 0) 70%) !important;
+        padding-left: 20px !important;
+    }
+
+    .carousel-item .wp-block-group .wp-block-columns.alignwide {
+        width: 85%;
+    }
+
+    .carousel-item .wp-block-cover__inner-container .wp-block-group.alignfull.has-background .wp-block-columns.alignwide .wp-block-column .wp-block-group {
+        padding-left: 20px !important;
+        padding-right: 10vw !important;
+    }
+
+    .carousel-item .wp-block-cover.alignwide.has-custom-content-position .wp-block-cover__inner-container .wp-block-columns.alignwide .wp-block-column .wp-block-group .wp-block-columns.alignwide .wp-block-column h2 {
+        font-size: 1.3rem;
+    }
+
+    .carousel-item .wp-block-cover.alignwide.has-custom-content-position .wp-block-cover__inner-container .wp-block-columns.alignwide .wp-block-column .wp-block-group .wp-block-columns.alignwide .wp-block-column p {
+        font-size: 0.9rem;
+    }
+
+    .carousel-item a.wp-block-button__link.has-white-color.has-text-color.has-background.wp-element-button {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (min-width: 466px) {
+    .carousel-item .wp-block-cover__inner-container .wp-block-group.alignfull.has-background {
+        background: -o-linear-gradient(340deg, rgb(204, 2, 2) 0%, rgb(204, 2, 2) 78%, rgba(255, 255, 255, 0) 78%) !important;
+        background: linear-gradient(110deg, rgb(204, 2, 2) 0%, rgb(204, 2, 2) 78%, rgba(255, 255, 255, 0) 78%) !important;
+        padding-left: 20px !important;
+    }
+
+    .carousel-item .wp-block-group .wp-block-columns.alignwide {
+        width: 88%;
+    }
+
+    .carousel-item .wp-block-cover__inner-container .wp-block-group.alignfull.has-background .wp-block-columns.alignwide .wp-block-column .wp-block-group {
+        padding-left: 20px !important;
+        padding-right: 12vw !important;
+    }
+}
+
+@media only screen and (min-width: 550px) {
+    .carousel-item .wp-block-cover .wp-block-cover__inner-container .wp-block-group.alignfull.has-background {
+        background: -o-linear-gradient(340deg, rgb(204, 2, 2) 0%, rgb(204, 2, 2) 68%, rgba(255, 255, 255, 0) 68%) !important;
+        background: linear-gradient(110deg, rgb(204, 2, 2) 0%, rgb(204, 2, 2) 68%, rgba(255, 255, 255, 0) 68%) !important;
+    }
+
+    .carousel-item .wp-block-group .wp-block-columns.alignwide {
+        width: 80%;
+    }
+
+    .carousel-item .wp-block-cover__inner-container .wp-block-group.alignfull.has-background .wp-block-columns.alignwide .wp-block-column .wp-block-group {
+        padding-left: 10px !important;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    .carousel-item .wp-block-cover .wp-block-cover__inner-container .wp-block-group.alignfull.has-background {
+        background: -o-linear-gradient(340deg, rgb(204, 2, 2) 0%, rgb(204, 2, 2) 58%, rgba(255, 255, 255, 0) 58%) !important;
+        background: linear-gradient(110deg, rgb(204, 2, 2) 0%, rgb(204, 2, 2) 58%, rgba(255, 255, 255, 0) 58%) !important;
+    }
+
+    .carousel-item .wp-block-group .wp-block-columns.alignwide {
+        width: 80%;
+        margin-left: 0 !important;
+    }
+
+    .carousel-item .wp-block-cover__inner-container .wp-block-group.alignfull.has-background .wp-block-columns.alignwide .wp-block-column .wp-block-group {
+        padding-left: 25px !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .carousel-item .wp-block-cover .wp-block-cover__inner-container .wp-block-group.alignfull.has-background {
+        background: -o-linear-gradient(340deg, rgb(204, 2, 2) 0%, rgb(204, 2, 2) 50%, rgba(255, 255, 255, 0) 50%) !important;
+        background: linear-gradient(110deg, rgb(204, 2, 2) 0%, rgb(204, 2, 2) 50%, rgba(255, 255, 255, 0) 50%) !important;
+    }
+
+    .carousel-item .wp-block-column p {
+        padding-right: 20vw;
+    }
+
+    .carousel-item .wp-block-columns.alignwide {
+        padding-left: 25px !important;
+    }
+}

@@ -1,0 +1,21 @@
+.contact-us-icons-block .wp-block-group.has-background.is-layout-constrained {
+    height: 223px !important;
+}
+
+.contact-icons-outer-wrapper {
+    padding-right: 5vw;
+    padding-left: 5vw;
+}
+
+.wp-container-36 {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+.contact-icons-outer-wrapper .wp-block-group.has-background.is-layout-constrained:hover {
+    background-color: rgb(251, 251, 251) !important;
+}

@@ -1,0 +1,40 @@
+:root {
+    --main-bk-color: white;
+    --bright-red: #cc0202;
+    --dark-red: #8c1e1e;
+    --light-gray: #767676;
+    --medium-gray: #474747;
+    --dark-gray: #343031;
+    --font-poppins: "Poppins", sans-serif;
+    --font-segoe: "Segoe Ui Bold", sans-serif;
+    --font-open-sans: "Open Sans", sans-serif;
+    --font-roboto: "Roboto", sans-serif;
+}
+
+@font-face {
+    font-family: 'Segoe UI Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold'), url('assets/fonts/Segoe-UI-Bold.woff') format('woff');
+}
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+* {
+    font-family: var(--font-open-sans);
+    font-weight: 400;
+}
+
+h1,
+h2 {
+    font-family: var(--font-segoe);
+}
+
+body {
+    background-color: var(--main-bk-color);
+}

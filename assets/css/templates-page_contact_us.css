@@ -1,0 +1,23 @@
+.text-heading-container div {
+    -ms-flex: 0 0 83.333333%;
+    -webkit-box-flex: 0;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+    text-align: center;
+}
+
+.text-heading-container div.entry-content.wp-block-post-content.is-layout-flow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.contact-us-bottom-text-container {
+    margin: 20px 3vw 40px 3vw !important;
+}

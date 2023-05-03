@@ -1,0 +1,116 @@
+/* templates/front-page.html & patterns/products-by-category.php */
+
+.front-page-three-text-detail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    text-align: middle;
+}
+
+.home-text-line {
+    display: none;
+}
+
+@media only screen and (min-width: 782px) {
+    .home-text-line {
+        display: block;
+    }
+}
+
+.wp-block-columns.front-page-three-text-detail.is-layout-flex.wp-container-7 {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+.products-category-container {
+    margin-bottom: 60px;
+}
+
+.product-category-heading-container {
+    margin-left: 7vw !important;
+    margin-right: 7vw !important;
+}
+
+.product-category-heading-container h2 {
+    margin-bottom: 15px;
+}
+
+.featured-items-container div.wc-block-grid__product-image {
+    overflow: hidden;
+}
+
+.featured-items-container div.wc-block-grid__product-image img {
+    overflow: hidden;
+    -webkit-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+}
+
+.featured-items-container div.wc-block-grid__product-image img:hover {
+    overflow: hidden;
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+}
+
+@media only screen and (max-width: 781px) {
+    .products-category-container {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
+.products-category-container figure {
+    overflow: hidden;
+}
+
+.products-category-container figure img {
+    height: 150px;
+    width: 300px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 399px) {
+    .products-category-container {
+        padding-right: 5vw;
+        padding-left: 5vw;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    .products-category-container {
+        padding-right: 10vw;
+        padding-left: 10vw;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .products-category-container {
+        padding-right: 20vw;
+        padding-left: 20vw;
+    }
+}
+
+.products-category-container p strong a {
+    color: black;
+}
+
+.products-category-container p strong a:hover {
+    color: var(--dark-red);
+    text-decoration: none;
+}

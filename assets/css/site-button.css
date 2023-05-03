@@ -1,0 +1,182 @@
+/* Site Button - Dark Gray Background/White Text - Dark red with dark red border on Hover */
+/* Button hover effect adapted from: https: //codepen.io/giana/pen/xdXpJB */
+
+p.return-to-shop a,
+.product-catalog-search-container button.wp-block-search__button,
+.featured-items-container .wp-block-button.wc-block-grid__product-add-to-cart a.ajax_add_to_cart,
+.error-404-container div.wp-block-button.is-style-fill a.wp-block-button__link.has-background.wp-element-button,
+.blog-search-form-container button.wp-block-search__button.wp-element-button,
+form.checkout_coupon.woocommerce-form-coupon button.button.wp-element-button,
+form.checkout.woocommerce-checkout .woocommerce-checkout-payment button#place_order,
+.wc-proceed-to-checkout a.checkout-button,
+.woocommerce-cart-form .coupon button.button.wp-element-button,
+.my-account-container .woocommerce-address-fields button.button.wp-element-button,
+a.button.wp-element-button.product_type_simple.add_to_cart_button.ajax_add_to_cart,
+button.single_add_to_cart_button.button.alt.wp-element-button,
+.woocommerce-MyAccount-content .woocommerce-Button.button.wp-element-button {
+    -webkit-box-shadow: inset 0 0 0 4px #32373c;
+    box-shadow: inset 0 0 0 4px #32373c;
+    -webkit-transition: color 0.25s 0.0833333333s;
+    -o-transition: color 0.25s 0.0833333333s;
+    transition: color 0.25s 0.0833333333s;
+    position: relative;
+}
+
+p.return-to-shop a::before,
+p.return-to-shop a::after,
+.product-catalog-search-container button.wp-block-search__button::before,
+.product-catalog-search-container button.wp-block-search__button::after,
+.featured-items-container .wp-block-button.wc-block-grid__product-add-to-cart a.ajax_add_to_cart::before,
+.featured-items-container .wp-block-button.wc-block-grid__product-add-to-cart a.ajax_add_to_cart::after,
+.error-404-container div.wp-block-button.is-style-fill a.wp-block-button__link.has-background.wp-element-button::before,
+.error-404-container div.wp-block-button.is-style-fill a.wp-block-button__link.has-background.wp-element-button::after,
+.blog-search-form-container button.wp-block-search__button.wp-element-button::before,
+.blog-search-form-container button.wp-block-search__button.wp-element-button::after,
+form.checkout_coupon.woocommerce-form-coupon button.button.wp-element-button::before,
+form.checkout_coupon.woocommerce-form-coupon button.button.wp-element-button::after,
+form.checkout.woocommerce-checkout .woocommerce-checkout-payment button#place_order::before,
+form.checkout.woocommerce-checkout .woocommerce-checkout-payment button#place_order::after,
+.wc-proceed-to-checkout a.checkout-button::before,
+.wc-proceed-to-checkout a.checkout-button::after,
+.woocommerce-cart-form .coupon button.button.wp-element-button::before,
+.woocommerce-cart-form .coupon button.button.wp-element-button::after,
+.my-account-container .woocommerce-address-fields button.button.wp-element-button::before,
+.my-account-container .woocommerce-address-fields button.button.wp-element-button::after,
+a.button.wp-element-button.product_type_simple.add_to_cart_button.ajax_add_to_cart::before,
+a.button.wp-element-button.product_type_simple.add_to_cart_button.ajax_add_to_cart::after,
+button.single_add_to_cart_button.button.alt.wp-element-button::before,
+button.single_add_to_cart_button.button.alt.wp-element-button::after,
+.woocommerce-MyAccount-content .woocommerce-Button.button.wp-element-button::before,
+.woocommerce-MyAccount-content .woocommerce-Button.button.wp-element-button::after {
+    border: 0 solid transparent;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+}
+
+p.return-to-shop a::before,
+.product-catalog-search-container button.wp-block-search__button::before,
+.featured-items-container .wp-block-button.wc-block-grid__product-add-to-cart a.ajax_add_to_cart::before,
+.error-404-container div.wp-block-button.is-style-fill a.wp-block-button__link.has-background.wp-element-button::before,
+.blog-search-form-container button.wp-block-search__button.wp-element-button::before,
+form.checkout_coupon.woocommerce-form-coupon button.button.wp-element-button::before,
+form.checkout.woocommerce-checkout .woocommerce-checkout-payment button#place_order::before,
+.wc-proceed-to-checkout a.checkout-button::before,
+.woocommerce-cart-form .coupon button.button.wp-element-button::before,
+.my-account-container .woocommerce-address-fields button.button.wp-element-button::before,
+a.button.wp-element-button.product_type_simple.add_to_cart_button.ajax_add_to_cart::before,
+button.single_add_to_cart_button.button.alt.wp-element-button::before,
+.woocommerce-MyAccount-content .woocommerce-Button.button.wp-element-button::before {
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+}
+
+p.return-to-shop a::after,
+.product-catalog-search-container button.wp-block-search__button::after,
+.featured-items-container .wp-block-button.wc-block-grid__product-add-to-cart a.ajax_add_to_cart::after,
+.error-404-container div.wp-block-button.is-style-fill a.wp-block-button__link.has-background.wp-element-button::after,
+.blog-search-form-container button.wp-block-search__button.wp-element-button::after,
+form.checkout_coupon.woocommerce-form-coupon button.button.wp-element-button::after,
+form.checkout.woocommerce-checkout .woocommerce-checkout-payment button#place_order::after,
+.wc-proceed-to-checkout a.checkout-button::after,
+.woocommerce-cart-form .coupon button.button.wp-element-button::after,
+.my-account-container .woocommerce-address-fields button.button.wp-element-button::after,
+a.button.wp-element-button.product_type_simple.add_to_cart_button.ajax_add_to_cart::after,
+button.single_add_to_cart_button.button.alt.wp-element-button::after,
+.woocommerce-MyAccount-content .woocommerce-Button.button.wp-element-button::after {
+    border-top-width: 4px;
+    border-right-width: 4px;
+}
+
+p.return-to-shop a:hover,
+.product-catalog-search-container button.wp-block-search__button:hover,
+.featured-items-container .wp-block-button.wc-block-grid__product-add-to-cart a.ajax_add_to_cart:hover,
+.error-404-container div.wp-block-button.is-style-fill a.wp-block-button__link.has-background.wp-element-button:hover,
+.blog-search-form-container button.wp-block-search__button.wp-element-button:hover,
+form.checkout_coupon.woocommerce-form-coupon button.button.wp-element-button:hover,
+form.checkout.woocommerce-checkout .woocommerce-checkout-payment button#place_order:hover,
+.wc-proceed-to-checkout a.checkout-button:hover,
+.woocommerce-cart-form .coupon button.button.wp-element-button:hover,
+.my-account-container .woocommerce-address-fields button.button.wp-element-button:hover,
+a.button.wp-element-button.product_type_simple.add_to_cart_button.ajax_add_to_cart:hover,
+button.single_add_to_cart_button.button.alt.wp-element-button:hover,
+.woocommerce-MyAccount-content .woocommerce-Button.button.wp-element-button:hover {
+    color: var(--main-bk-color);
+    background-color: #440a0a;
+}
+
+p.return-to-shop a:hover::before,
+p.return-to-shop a:hover::after,
+.product-catalog-search-container button.wp-block-search__button:hover::before,
+.product-catalog-search-container button.wp-block-search__button:hover::after,
+.featured-items-container .wp-block-button.wc-block-grid__product-add-to-cart a.ajax_add_to_cart:hover::before,
+.featured-items-container .wp-block-button.wc-block-grid__product-add-to-cart a.ajax_add_to_cart:hover::after,
+.error-404-container div.wp-block-button.is-style-fill a.wp-block-button__link.has-background.wp-element-button:hover::before,
+.error-404-container div.wp-block-button.is-style-fill a.wp-block-button__link.has-background.wp-element-button:hover::after,
+.blog-search-form-container button.wp-block-search__button.wp-element-button:hover::before,
+.blog-search-form-container button.wp-block-search__button.wp-element-button:hover::after,
+form.checkout_coupon.woocommerce-form-coupon button.button.wp-element-button:hover::before,
+form.checkout_coupon.woocommerce-form-coupon button.button.wp-element-button:hover::after,
+form.checkout.woocommerce-checkout .woocommerce-checkout-payment button#place_order:hover::after,
+form.checkout.woocommerce-checkout .woocommerce-checkout-payment button#place_order:hover::before,
+.wc-proceed-to-checkout a.checkout-button:hover::before,
+.wc-proceed-to-checkout a.checkout-button:hover::after,
+.woocommerce-cart-form .coupon button.button.wp-element-button:hover::before,
+.woocommerce-cart-form .coupon button.button.wp-element-button:hover::after,
+.my-account-container .woocommerce-address-fields button.button.wp-element-button:hover::before,
+.my-account-container .woocommerce-address-fields button.button.wp-element-button:hover::after,
+a.button.wp-element-button.product_type_simple.add_to_cart_button.ajax_add_to_cart:hover::before,
+a.button.wp-element-button.product_type_simple.add_to_cart_button.ajax_add_to_cart:hover::after,
+button.single_add_to_cart_button.button.alt.wp-element-button:hover::before,
+button.single_add_to_cart_button.button.alt.wp-element-button:hover::after,
+.woocommerce-MyAccount-content .woocommerce-Button.button.wp-element-button:hover::before,
+.woocommerce-MyAccount-content .woocommerce-Button.button.wp-element-button:hover::after {
+    border-color: var(--dark-red);
+    -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+    -o-transition: border-color 0s, width 0.25s, height 0.25s;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+}
+
+p.return-to-shop a:hover::before,
+.product-catalog-search-container button.wp-block-search__button:hover::before,
+.featured-items-container .wp-block-button.wc-block-grid__product-add-to-cart a.ajax_add_to_cart:hover::before,
+.error-404-container div.wp-block-button.is-style-fill a.wp-block-button__link.has-background.wp-element-button:hover::before,
+.blog-search-form-container button.wp-block-search__button.wp-element-button:hover::before,
+form.checkout_coupon.woocommerce-form-coupon button.button.wp-element-button:hover::before,
+form.checkout.woocommerce-checkout .woocommerce-checkout-payment button#place_order:hover::before,
+.wc-proceed-to-checkout a.checkout-button:hover::before,
+.woocommerce-cart-form .coupon button.button.wp-element-button:hover::before,
+.my-account-container .woocommerce-address-fields button.button.wp-element-button:hover::before,
+a.button.wp-element-button.product_type_simple.add_to_cart_button.ajax_add_to_cart:hover::before,
+button.single_add_to_cart_button.button.alt.wp-element-button:hover::before,
+.woocommerce-MyAccount-content .woocommerce-Button.button.wp-element-button:hover::before {
+    -webkit-transition-delay: 0s, 0s, 0.25s;
+    -o-transition-delay: 0s, 0s, 0.25s;
+    transition-delay: 0s, 0s, 0.25s;
+}
+
+p.return-to-shop a:hover::after,
+.product-catalog-search-container button.wp-block-search__button:hover::after,
+.featured-items-container .wp-block-button.wc-block-grid__product-add-to-cart a.ajax_add_to_cart:hover::after,
+.error-404-container div.wp-block-button.is-style-fill a.wp-block-button__link.has-background.wp-element-button:hover::after,
+.blog-search-form-container button.wp-block-search__button.wp-element-button:hover::after,
+form.checkout_coupon.woocommerce-form-coupon button.button.wp-element-button:hover::after,
+form.checkout.woocommerce-checkout .woocommerce-checkout-payment button#place_order:hover::after,
+.wc-proceed-to-checkout a.checkout-button:hover::after,
+.woocommerce-cart-form .coupon button.button.wp-element-button:hover::after,
+.my-account-container .woocommerce-address-fields button.button.wp-element-button:hover::after,
+a.button.wp-element-button.product_type_simple.add_to_cart_button.ajax_add_to_cart:hover::after,
+button.single_add_to_cart_button.button.alt.wp-element-button:hover::after,
+.woocommerce-MyAccount-content .woocommerce-Button.button.wp-element-button:hover::after {
+    -webkit-transition-delay: 0s, 0.25s, 0s;
+    -o-transition-delay: 0s, 0.25s, 0s;
+    transition-delay: 0s, 0.25s, 0s;
+}

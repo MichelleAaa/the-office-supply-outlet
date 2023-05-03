@@ -13,7 +13,7 @@ function wpbootstrap_enqueue_styles() {
 
     wp_enqueue_style('main_styles', get_stylesheet_uri());
 
-    wp_enqueue_style('custom-google-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400|Roboto:400|Source+Sans+Pro:600|Forum:600|Poppins:200');
+    wp_enqueue_style('custom-google-fonts', '//fonts.googleapis.com/css?family=Open+Sans:400|Roboto:400|Poppins:200');
 }
 
 add_action('wp_enqueue_scripts', 'wpbootstrap_enqueue_styles');
@@ -51,6 +51,26 @@ function custom_post_types(){
 }
 
 add_action('init', 'custom_post_types');
+
+function the_office_supply_outlet_config() {
+    add_theme_support( 'woocommerce' );
+		add_theme_support( 'post-thumbnails' ); 
+		add_theme_support('title-tag');		
+
+    // Add support for editor styles.
+		add_theme_support( 'editor-styles' );
+    $editor_stylesheet_path = './assets/css/style-editor.css';
+    add_editor_style( $editor_stylesheet_path );
+
+    add_theme_support( 'wp-block-styles' );
+    add_theme_support( 'align-wide' );
+
+    if ( ! isset( $content_width ) ) {
+      $content_width = 600;
+    }
+}
+
+add_action( 'after_setup_theme', 'the_office_supply_outlet_config', 0 );
 
 // For blocks that are not editable in the full site editor (Adapted from: https://www.udemy.com/course/become-a-wordpress-developer-php-javascript/):
 class PlaceholderBlock {

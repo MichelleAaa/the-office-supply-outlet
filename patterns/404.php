@@ -9,11 +9,11 @@
 //  Adapted from: https://wordpress.org/patterns/pattern/404-page-16/
 ?>
 
-<!-- wp:group {"align":"full","className":"error-404-container","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull error-404-container"><!-- wp:columns {"align":"full","style":{"spacing":{"padding":{"top":"60px","bottom":"40px","right":"20px","left":"20px"}}}} -->
+<!-- wp:group {"tagName":"main", "align":"full","className":"error-404-container","layout":{"type":"constrained"}} -->
+<main class="wp-block-group alignfull error-404-container"><!-- wp:columns {"align":"full","style":{"spacing":{"padding":{"top":"60px","bottom":"40px","right":"20px","left":"20px"}}}} -->
 <div class="wp-block-columns alignfull" style="padding-top:60px;padding-right:20px;padding-bottom:40px;padding-left:20px"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="http://the-office-supply-outlet.local/wp-content/themes/theofficesupplyoutlet/assets/images/404.jpg" alt=""/></figure>
+<figure class="wp-block-image size-large"><img src="http://the-office-supply-outlet.local/wp-content/themes/theofficesupplyoutlet/assets/images/404.jpg" alt="404 error"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
@@ -38,5 +38,5 @@
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:column --></div>
-<!-- /wp:columns --></div>
+<!-- /wp:columns --></main>
 <!-- /wp:group -->

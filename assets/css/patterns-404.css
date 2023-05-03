@@ -1,0 +1,13 @@
+.error-404-container {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.error-404-container div.wp-block-button.is-style-fill a.wp-block-button__link.has-background.wp-element-button:hover {
+    text-decoration: none;
+    background-color: #440a0a !important;
+}
+
+.error-404-container input#wp-block-search__input-25 {
+    border: 1px solid var(--light-gray);
+}

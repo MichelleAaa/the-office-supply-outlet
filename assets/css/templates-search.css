@@ -1,0 +1,12 @@
+.block-search-results-container section article {
+    margin-bottom: 20px;
+}
+
+.index-query-loop-container nav.wp-block-query-pagination a {
+    color: var(--bright-red);
+}
+
+.index-query-loop-container nav.wp-block-query-pagination a:hover {
+    color: var(--dark-gray);
+    text-decoration: none;
+}

@@ -19,6 +19,7 @@ I built this project while studying WordPress custom block themes and some of th
 ## References
 
 - Udemy - Brad Schiff - Become a WordPress Developer: Unlocking Power With Code - https://www.udemy.com/course/become-a-wordpress-developer-php-javascript/ (For the placeholder class used to convert PHP blocks into a placeholder block which is visible on the front-end, but not editable in the block editor.)
+- Button hover effect adapted from: https: //codepen.io/giana/pen/xdXpJB
 - wordpress.org Patterns - Designer: Hiral Rupapara - 404 Page - https://wordpress.org/patterns/pattern/404-page-16/ 
 - wordpress.org Patterns - Designer: Hiral Rupapara - Effective Solutions - https://wordpress.org/patterns/pattern/effective-solutions/
 - wordpress.org Patterns - Designer: devangi09 - Contact Us Details With Form - https://wordpress.org/patterns/pattern/effective-solutions/

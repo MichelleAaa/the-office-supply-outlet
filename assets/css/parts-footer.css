@@ -1,0 +1,28 @@
+footer.wp-block-template-part {
+    -webkit-margin-before: 0;
+    margin-block-start: 0;
+}
+
+footer nav.wp-block-navigation.is-layout-flex {
+    margin-right: 0;
+}
+
+footer nav.wp-block-navigation.is-layout-flex {
+    height: auto;
+}
+
+@media only screen and (max-width: 781px) {
+    footer nav.wp-block-navigation.is-layout-flex {
+        line-height: inherit;
+    }
+
+    footer nav.wp-container-31.wp-container-31 {
+        -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+        align-items: flex-start !important;
+    }
+
+    footer nav.wp-block-navigation.items-justified-right.is-vertical {
+        --navigation-layout-align: flex-start;
+    }
+}
