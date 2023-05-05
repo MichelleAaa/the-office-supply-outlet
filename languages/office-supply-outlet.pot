@@ -1,0 +1,217 @@
+# Blank WordPress Pot
+# Copyright 2014 ...
+# This file is distributed under the GNU General Public License v3 or later.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: The "
+"Office Supply Outlet Pot "
+"v1.0.0\n"
+"Report-Msgid-Bugs-To: "
+"Translator Name "
+"<translations@example."
+"com>\n"
+"POT-Creation-Date: "
+"2023-05-04 18:05-0400\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Your "
+"Name <you@example.com>\n"
+"Language-Team: Your Team "
+"<translations@example."
+"com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/"
+"plain; charset=UTF-8\n"
+"Content-Transfer-"
+"Encoding: 8bit\n"
+"Plural-Forms: "
+"nplurals=2; plural=n != "
+"1;\n"
+"X-Textdomain-Support: "
+"yesX-Generator: Poedit "
+"1.6.4\n"
+"X-Poedit-SourceCharset: "
+"UTF-8\n"
+"X-Poedit-KeywordsList: "
+"__;_e;esc_html_e;"
+"esc_html_x:1,2c;"
+"esc_html__;esc_attr_e;"
+"esc_attr_x:1,2c;"
+"esc_attr__;_ex:1,2c;"
+"_nx:4c,1,2;"
+"_nx_noop:4c,1,2;_x:1,2c;"
+"_n:1,2;_n_noop:1,2;"
+"__ngettext:1,2;"
+"__ngettext_noop:1,2;_c,"
+"_nc:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit "
+"3.2.2\n"
+"X-Poedit-"
+"SearchPath-0: .\n"
+
+#: blocks/blogsearchresults.php:13
+msgid "Search Results"
+msgstr ""
+
+#: blocks/blogsearchresults.php:14
+msgid "You searched for \""
+msgstr ""
+
+#: blocks/blogsearchresults.php:35
+#: patterns/three-highlights.php:73
+#: patterns/three-highlights.php:115
+#: patterns/three-highlights.php:156
+msgid "Read More"
+msgstr ""
+
+#: blocks/blogsearchresults.php:47
+msgid ""
+"Sorry, no results match "
+"that search."
+msgstr ""
+
+#: blocks/contactusform.php:4
+msgid "contact us"
+msgstr ""
+
+#: blocks/contactusform.php:7
+msgid ""
+"Get in touch with us"
+msgstr ""
+
+#: blocks/contactusform.php:66
+msgid "Send Message"
+msgstr ""
+
+#: blocks/headingslider.php:124
+msgid "Previous"
+msgstr ""
+
+#: blocks/headingslider.php:128
+msgid "Next"
+msgstr ""
+
+#: patterns/404.php:29
+msgid "Oops..."
+msgstr ""
+
+#: patterns/404.php:33
+msgid ""
+"We are not being able to "
+"find the page you are "
+"looking for."
+msgstr ""
+
+#: patterns/404.php:37
+msgid ""
+"The page you are looking "
+"for was moved, removed, "
+"renamed or never existed."
+msgstr ""
+
+#: patterns/404.php:45
+msgid "Back to home"
+msgstr ""
+
+#: patterns/contact-us-icons.php:34
+msgid "Contact"
+msgstr ""
+
+#: patterns/contact-us-icons.php:38
+msgid "+ (1) 234-567-8900"
+msgstr ""
+
+#: patterns/contact-us-icons.php:54
+msgid "Location"
+msgstr ""
+
+#: patterns/contact-us-icons.php:58
+msgid ""
+"123 Office Street, "
+"Paperclip, OH 90090"
+msgstr ""
+
+#: patterns/contact-us-icons.php:74
+msgid "Email Us"
+msgstr ""
+
+#: patterns/contact-us-icons.php:78
+msgid ""
+"info@theofficesupplyoutlet."
+"com"
+msgstr ""
+
+#: patterns/products-by-category.php:17
+msgid ""
+"Products By Category"
+msgstr ""
+
+#: patterns/products-by-category.php:21
+msgid ""
+"Didn't find what you "
+"were looking for? Try "
+"browsing by category:"
+msgstr ""
+
+#: patterns/products-by-category.php:37
+msgid "Writing Supplies"
+msgstr ""
+
+#: patterns/products-by-category.php:48
+msgid ""
+"Notebooks &amp; Binders"
+msgstr ""
+
+#: patterns/products-by-category.php:60
+msgid "Accessories"
+msgstr ""
+
+#: patterns/products-by-category.php:72
+msgid "Electronics"
+msgstr ""
+
+#: patterns/three-highlights.php:28
+msgid "Providing"
+msgstr ""
+
+#: patterns/three-highlights.php:32
+msgid "Quality Products"
+msgstr ""
+
+#: patterns/three-highlights.php:36
+msgid ""
+"Lorem ipsum dolor sit "
+"amet, consectetur "
+"adipiscing elit, sed do "
+"eiusmod tempor "
+"incididunt ut labore et "
+"dolore magna aliqua."
+msgstr ""
+
+#: patterns/three-highlights.php:64
+msgid "Bulk Order Discount"
+msgstr ""
+
+#: patterns/three-highlights.php:69
+#: patterns/three-highlights.php:111
+#: patterns/three-highlights.php:152
+msgid ""
+"Lorem ipsum dolor sit "
+"amet. Consecteture "
+"adipiscing elit, sed do "
+"eiusmod tempor "
+"incidientunt ut labore "
+"et dolore magna aliqu."
+msgstr ""
+
+#: patterns/three-highlights.php:106
+msgid "No Minimum Order"
+msgstr ""
+
+#: patterns/three-highlights.php:147
+msgid ""
+"Delivery in 3-5 Business "
+"Days"
+msgstr ""

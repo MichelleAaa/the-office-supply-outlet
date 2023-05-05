@@ -41,3 +41,8 @@
 form.contact-us-form button {
     margin-top: 4px;
 }
+
+form.contact-us-form input:hover,
+form.contact-us-form textarea:hover {
+    cursor:auto;
+}

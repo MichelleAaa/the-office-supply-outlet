@@ -1,6 +1,6 @@
 # The Office Supply Outlet Website
 
-A WordPress custom block theme website for an office supply company. Built with HTML, CSS, PHP, JavaScript, Bootstrap, and more. There are two custom post types, one to add/update FAQ data to the carousel and another to add/update the heading sliders. The project utilizes the Woocommerce plugin for the shop functionality and the Advanced Custom Fields plugin for additional fields in the header-slides custom post type. 
+A WordPress custom block theme website for an office supply company. Built with HTML, CSS, PHP, JavaScript, Bootstrap, and more. There are two custom post types, one to add/update FAQ data to the carousel and another to add/update the heading sliders. The project utilizes the Woocommerce plugin for the shop functionality, the Advanced Custom Fields plugin for additional fields in the header-slides custom post type, and several patterns from wordpress.org. 
 
 ## Project Screen Shot(s)
 

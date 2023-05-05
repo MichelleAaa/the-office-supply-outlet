@@ -1,3 +1,8 @@
+.blog-heading-container .wp-block-column.is-layout-flow {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
 .index-query-loop-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -194,26 +199,3 @@
     }
 }
 
-.featured-items-container {
-    padding-left: 10vw;
-    padding-right: 10vw;
-}
-
-@media only screen and (max-width: 850px) {
-    .featured-items-container {
-        padding-left: 5vw;
-        padding-right: 5vw;
-    }
-}
-
-.featured-items-container .wc-block-grid__product-image {
-    max-width: 300px;
-}
-
-.featured-items-container .wp-block-button.wc-block-grid__product-add-to-cart a {
-    border-radius: 0;
-}
-
-.featured-items-container .wp-block-button.wc-block-grid__product-add-to-cart a:hover {
-    text-decoration: none;
-}

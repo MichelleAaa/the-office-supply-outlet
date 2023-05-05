@@ -10,8 +10,8 @@ $searchQuery = new WP_Query(array(
 <div class="container-fluid block-search-results-container">
     <div class="row d-flex justify-content-center align-items-center">
         <div class="col-12 col-md-9 col-xl-10 d-flex justify-content-center align-items-center flex-column mb-3">
-            <h2>Search Results</h2>
-            <p>You searched for "<?php echo esc_html(get_search_query()) ?>".</p>
+            <h2><?php esc_html_e( 'Search Results', 'office-supply-outlet' ); ?></h2>
+            <p><?php esc_html_e( 'You searched for "', 'office-supply-outlet' ); ?><?php echo esc_html(get_search_query()) ?>".</p>
         </div>
         <section class="col-12 col-md-9 col-xl-10 individual-post-container">
             <?php 
@@ -32,7 +32,7 @@ $searchQuery = new WP_Query(array(
                             <div class="col-11 col-lg-8">
                                 <h2 class="wp-block-post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                                 <p class="mb-2"><?php echo wp_trim_words(get_the_content(), 55) . "..."; ?></p>
-                                <a href="<?php the_permalink(); ?>" class="wp-block-read-more">Read More</a>
+                                <a href="<?php the_permalink(); ?>" class="wp-block-read-more"><?php esc_html_e( 'Read More', 'office-supply-outlet' ); ?></a>
                                 <div class="wp-block-post-author-name"><?php the_author(); ?></div>
                                 <div class="wp-block-post-date"><?php the_time('F j, Y'); ?></div>
                             </div>
@@ -44,7 +44,7 @@ $searchQuery = new WP_Query(array(
             } else { ?> 
                 <div class="row d-flex justify-content-center align-items-center my-5">
                     <div class="col-11 col-lg-10">
-                        <h2 class="post-item-title headline--small text-center">Sorry, no results match that search.</h2>
+                        <h2 class="post-item-title headline--small text-center"><?php esc_html_e( 'Sorry, no results match that search.', 'office-supply-outlet' ); ?></h2>
                     </div>
                 </div>  
             <?php } 

@@ -68,9 +68,21 @@ function the_office_supply_outlet_config() {
     if ( ! isset( $content_width ) ) {
       $content_width = 600;
     }
+
+    $textdomain = 'office-supply-outlet';
+    load_theme_textdomain( $textdomain, get_stylesheet_directory() . '/languages/' );
+    load_theme_textdomain( $textdomain, get_template_directory() . '/languages/' );
 }
 
 add_action( 'after_setup_theme', 'the_office_supply_outlet_config', 0 );
+
+
+function my_acf_format_value( $value, $post_id, $field ) {
+	return esc_attr($value);
+}
+
+add_filter('acf/format_value/type=url', 'my_acf_format_value', 10, 3);
+
 
 // For blocks that are not editable in the full site editor (Adapted from: https://www.udemy.com/course/become-a-wordpress-developer-php-javascript/):
 class PlaceholderBlock {

@@ -25,40 +25,44 @@
         )); 
 
         ?>
-        <div class="faq-card-title">
-          <h3 class="text-center"><?php echo $category_names[$count][1]; ?></h3>
-        </div>
-        <div class="accordion" id="accordion-<?php echo $count; ?>">
-
-        <?php
-          
-          while($faqPosts->have_posts()){
-            $faqPosts->the_post();     
-          ?>
-
-          <div class="card">
-            <div class="card-header" id="heading-<?php echo $post_number; ?>">
-              <h2 class="mb-0">
-                <button class="btn btn-link btn-block text-left d-flex justify-content-between flex-row" type="button" data-toggle="collapse" data-target="#collapse-<?php echo $post_number; ?>" aria-expanded="true" aria-controls="collapse<?php echo $post_number; ?>">
-                  <?php the_title(); ?>
-                  <span class="<?php echo $category_names[$count][0]; ?>">
-                  +
-                </span>
-                </button>
-                
-              </h2>
-            </div>
-            <div id="collapse-<?php echo $post_number; ?>" class="collapse" aria-labelledby="heading-<?php echo $post_number; ?>" data-parent="#accordion-<?php echo $count; ?>">
-              <div class="card-body">
-                <?php the_content(); ?>
-              </div>
-            </div>
+        <section>
+          <div class="faq-card-title">
+            <h2 class="text-center"><?php echo esc_html($category_names[$count][1]); ?></h2>
           </div>
-          <?php 
-          $post_number = $post_number + 1;
-        } 
-        ?>
-      </div>
+          <div class="accordion" id="accordion-<?php echo $count; ?>">
+
+          <?php
+            
+            while($faqPosts->have_posts()){
+              $faqPosts->the_post();     
+            ?>
+
+            <article>
+              <div class="card">
+                <div class="card-header" id="heading-<?php echo $post_number; ?>">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left d-flex justify-content-between flex-row" type="button" data-toggle="collapse" data-target="#collapse-<?php echo $post_number; ?>" aria-expanded="true" aria-controls="collapse<?php echo $post_number; ?>">
+                      <?php the_title(); ?>
+                      <span class="<?php echo $category_names[$count][0]; ?>">
+                      <?php echo esc_html('+'); ?>
+                    </span>
+                    </button>
+                    
+                  </h2>
+                </div>
+                <div id="collapse-<?php echo $post_number; ?>" class="collapse" aria-labelledby="heading-<?php echo $post_number; ?>" data-parent="#accordion-<?php echo $count; ?>">
+                  <div class="card-body">
+                    <?php the_content(); ?>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <?php 
+            $post_number = $post_number + 1;
+          } 
+          ?>
+        </div>
+      </section>
       <?php 
       wp_reset_postdata();
       }
