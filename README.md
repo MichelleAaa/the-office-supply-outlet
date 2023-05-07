@@ -25,7 +25,7 @@ The shop page pulls the shop details from the WooCommerce plugin.
 
 Add to Cart with WP Menu Cart Plugin
 
-![Add to Cart with WP Menu Cart Plugin](assets/readme-img/the-office-supply-outlet-3.jpeg "With the WP Menu Cart Plugin each time a user Clicks the 'Add to Cart' button on a product the total in the navbar for the cart is incremented by 1. In addition, a 'View Cart" button appears under the product that was added. The plugin can be set to enable the cart icon to dissapear from the navbar when on the cart page.")
+![Add to Cart with WP Menu Cart Plugin](assets/readme-img/the-office-supply-outlet-3.jpeg "With the WP Menu Cart Plugin each time a user Clicks the 'Add to Cart' button on a product the total in the navbar for the cart is incremented by 1. In addition, a 'View Cart' button appears under the product that was added. The plugin can be set to enable the cart icon to dissapear from the navbar when on the cart page.")
 
 With the WP Menu Cart Plugin each time a user Clicks the 'Add to Cart' button on a product the total in the navbar for the cart is incremented by 1. In addition, a 'View Cart" button appears under the product that was added. The plugin can be set to enable the cart icon to dissapear from the navbar when on the cart page.
 
